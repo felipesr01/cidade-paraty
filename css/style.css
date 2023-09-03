@@ -1,0 +1,140 @@
+@charset "UTF-8";
+
+body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    padding: 10px 100px;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+header img {
+    width: 180px;
+}
+
+.links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 280px;
+}
+
+.links a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+.links a:hover {
+    text-decoration: underline;
+}
+
+div:nth-of-type(odd) {
+    background-color: #E9E9E9;
+}
+
+div.banner {
+    background: url(../imgs/bg-estacao.png);
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+h1, h2 {
+    display: flex;
+    margin: 0;
+    color: white;
+    text-shadow: 1px 1px 5px rgb(0, 0, 0);
+}
+h1 {
+    font-size: 5em;
+}
+h3 {
+    font-size: 2em;
+    margin: 30px auto;
+}
+div p::first-letter {
+    font-weight: bold;
+}
+p {
+    font-size: 1.1em;
+    line-height: 25px;
+}
+div.secao {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    flex-direction: column;
+    flex: 1 1 auto;
+}
+div.secao img {
+    width: 100%;
+    display: flex;
+    flex: 1 1 200px;
+}
+
+.pontos {
+    box-sizing: border-box;
+    justify-content: space-between;
+    padding: 30px 10%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+ul {
+    list-style-image: url(../imgs/seta.png);
+}
+
+.item {
+    margin: 10px 0px;
+}
+
+.secao3 {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 50px;
+}
+.secao3 p::first-letter {
+    font-weight: normal;
+}
+
+.fotos {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex: 1 1 auto;
+    gap: 5px;
+}
+
+.fotos img {
+    width: 320px;
+    flex: 1 1;
+    opacity: 50%;
+}
+.fotos img:hover {
+    opacity: 100%;
+}
+
+footer {
+    display: flex;
+    background-color: #F5C002;
+    text-align: center;
+    padding: 1px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+}
